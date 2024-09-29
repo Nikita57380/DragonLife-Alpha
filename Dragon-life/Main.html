@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon-life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-page">
+    <main>
+        <div class="Home-block">
+            <div class="Central">
+                <div class="title">
+                    <h1>DragonLife</h1>
+                </div>
+                <div class="description">
+                    <p>Уникальный сервер, где будут появляться</p>
+                    <br><br>
+                    <p>новые режимы!</p>
+                </div>
+                <a href="#" class="button">Перейти к товарам</a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="superlink">
+                <p>DRAGONLIFE.RU</p>
+            </div>
+            <div class="container">
+                <div class="first-block">
+                    <p>Главная</p>
+                </div>
+                <div class="second-block">
+                    <p>Правила</p>
+                </div>
+                <div class="third-block">
+                    <p>Акции</p>
+                </div>
+                <div class="fourth-block">
+                    <p>Контакты</p>
+                </div>
+            </div>
+        </header>
+        <div class="down-block">
+            <div id="products" class="products-container">
+                <div class="product-block">
+                    <h3>Выберите товар:</h3>
+                    <p>КНОПКИ НЕ КЛИКАБЕЛЬНЫЕ!!!</p>
+                    <ul style="list-style: circle;">
+                        <li>Товар 1</li>
+                        <li>Товар 2</li>
+                        <li>Товар 3</li>
+                    </ul>
+                </div>
+                <div class="product-block">
+                    <p>КАЧЕСТВО ТРЕБУЕТ ВРЕМЕНИ, КОТОРОЕ У МЕНЯ ЗАБРАЛИ</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    document.querySelector('.button').addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = document.getElementById('products');
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>  
+
+
+</html>
